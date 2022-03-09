@@ -1,0 +1,130 @@
+$bg-default: rgb(29, 29, 29);
+$header: rgba(15, 15, 15, 0.8);
+$fill: rgba(28, 70, 133, 0.8);
+$header-shadow: rgba(10, 10, 10, 0.8);
+$fill-shadow: rgba(22, 52, 99, 0.8);
+
+$header-size: 52px;
+$paragraph-size: 23px;
+
+body {
+  background: $bg-default;
+  overflow: hidden;
+}
+
+.main,
+.projects {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  overflow-y: auto;
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: $header;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+
+    p,
+    a {
+      color: white;
+      font-size: 36px;
+      margin-left: 25px;
+      text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+
+  .content {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100% - 60px);
+
+    .intro {
+      width: 700px;
+      height: auto;
+
+      h1,
+      h2,
+      p {
+        color: white;
+        text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h1,
+      h2 {
+        font-size: $header-size;
+      }
+      p {
+        font-size: $paragraph-size;
+      }
+    }
+
+    .skills {
+      width: 500px;
+      margin-bottom: 10px;
+      .skillsTitle {
+        font-size: $header-size;
+      }
+
+      h1,
+      h2,
+      p {
+        color: white;
+        text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .skillBar {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 500px;
+        height: 25px;
+        background: $header;
+        box-shadow: 0 0 8px 5px $header-shadow;
+
+        .skillBarFill {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          background: $fill;
+          box-shadow: 0 0 8px 5px $fill-shadow;
+        }
+      }
+    }
+
+    .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      background: $header;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-top: auto;
+
+      p,
+      a {
+        color: white;
+        font-size: 36px;
+        margin-left: 25px;
+        text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  }
+}
