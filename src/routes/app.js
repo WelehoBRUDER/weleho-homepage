@@ -1,8 +1,8 @@
 import "../style/main.scss";
-import Header from "./Header";
-import Footer from "./Footer";
-import Introduction from "./Introduction";
-import Skills from "./Skills";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Introduction from "../components/Introduction";
+import Skills from "../components/Skills";
 
 function App() {
   return (
