@@ -1,0 +1,41 @@
+@use "./main.scss" as *;
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: $header;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+
+  .websiteTitle {
+    text-shadow: 0 0 12px rgba(169, 102, 90);
+    font-size: 42px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+
+  .websiteTitle:hover {
+    text-shadow: 0 0 16px rgb(206, 107, 89);
+    filter: brightness(1.15);
+  }
+
+  p,
+  a {
+    color: white;
+    font-size: 36px;
+    margin-left: 25px;
+    text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+
+  p:hover,
+  a:hover {
+    text-shadow: 0 0 12px rgba(102, 149, 206, 0.8);
+    filter: brightness(1.15);
+  }
+}

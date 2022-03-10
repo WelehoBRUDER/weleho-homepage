@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/main.scss";
+import "../style/projects.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -47,7 +48,7 @@ function Projects() {
     },
     {
       name: "My Road",
-      desc: "Turn based fighting game based on its prequel Pohjola II. Abandoned in favour of Dungeons of Tavaraen.",
+      desc: "One of my earlier games, started because I didn't have internet one day and decided to program an interface. Had some simple attempts at creating an AI opponent.",
       repo: "https://github.com/WelehoBRUDER/MY-ROAD-RPG",
       link: "https://welehobruder.github.io/MY-ROAD-RPG/",
       image: "my-road.png",
@@ -58,7 +59,7 @@ function Projects() {
   const [focusedImage, setFocusedImage] = React.useState("");
 
   function focus(name) {
-    if (focusedImage !== "") setFocusedImage("");
+    if (focusedImage === name) setFocusedImage("");
     else setFocusedImage(name);
   }
 

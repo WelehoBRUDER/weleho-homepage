@@ -1,11 +1,12 @@
 import React from "react";
+import "../style/footer.scss";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <p>Contact Info</p>
       <p>Email: dimmedd@hotmail.com</p>
-    </div>
+    </footer>
   );
 }
 

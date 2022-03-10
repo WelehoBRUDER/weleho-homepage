@@ -1,0 +1,151 @@
+@use "./main.scss" as *;
+
+.projects {
+  .content {
+    .projectsTitle {
+      color: white;
+      font-size: $header-size;
+      text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .projectGrid {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      top: 60px;
+      margin-bottom: 60px;
+      width: 80%;
+      height: auto;
+
+      .projectContainer {
+        position: relative;
+        width: 400px;
+        height: 330px;
+        margin: 10px;
+        text-align: center;
+        background: $bg-dark;
+
+        .projectTitle {
+          color: white;
+          text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+          background: $bg-default;
+          box-shadow: inset 0 0 10px 6px $header;
+        }
+
+        .projectIcon {
+          transition: 0.06s;
+          width: 380px;
+          height: 180px;
+          margin: 10px;
+          margin-top: 0;
+          border: 5px solid $fill-shadow;
+          box-sizing: border-box;
+        }
+
+        .projectIcon:hover {
+          box-shadow: 0 0 12px 3px rgba(218, 165, 32, 0.75);
+          cursor: pointer;
+        }
+
+        .projectIconFocused {
+          position: absolute;
+          width: min(900px, 100vw);
+          height: min(580px, 50vh);
+          left: 50%;
+          margin-left: max(-450px, -50vw);
+          top: -60px;
+          z-index: 99;
+        }
+
+        .projectDesc {
+          position: relative;
+          color: white;
+          text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 0;
+          width: 80%;
+          font-size: 12px;
+          text-align: left;
+          margin-left: 10px;
+        }
+
+        .githubButtons {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 10px;
+          top: 225px;
+          .linkIcon {
+            transition: filter 0.12s, border 0.06s;
+            position: relative;
+            color: black;
+            text-decoration: none;
+            filter: drop-shadow(0 0 5px white);
+            font-size: 22px;
+            margin: 0;
+            text-align: center;
+            width: 27px;
+            height: 27px;
+            box-sizing: border-box;
+          }
+
+          .linkIcon:hover {
+            filter: drop-shadow(0 0 6px white);
+            border: 2px dotted silver;
+            margin: 0;
+          }
+        }
+
+        .projectProgress {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 380px;
+          height: 25px;
+          background: $bg-default;
+          margin: 10px;
+          box-shadow: inset 0 0 10px 6px $header;
+
+          .barFill {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+          }
+
+          .progText {
+            transition: opacity 0.11s;
+            position: absolute;
+            color: white;
+            text-shadow: 0 0 8px rgb(90 125 169 / 80%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            z-index: 2;
+            font-size: 18px;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            user-select: none;
+            width: 100%;
+          }
+
+          .progText:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
