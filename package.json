@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "weleho-homepage",
   "version": "0.1.0",
+  "homepage": "https://welehobruder.github.io/weleho-homepage/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
