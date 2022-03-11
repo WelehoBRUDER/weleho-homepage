@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/weleho-homepage/static/css/main.014c1499.css",
-    "main.js": "/weleho-homepage/static/js/main.cbe4a5e2.js",
+    "main.js": "/weleho-homepage/static/js/main.616a53bf.js",
     "index.html": "/weleho-homepage/index.html",
     "main.014c1499.css.map": "/weleho-homepage/static/css/main.014c1499.css.map",
-    "main.cbe4a5e2.js.map": "/weleho-homepage/static/js/main.cbe4a5e2.js.map"
+    "main.616a53bf.js.map": "/weleho-homepage/static/js/main.616a53bf.js.map"
   },
   "entrypoints": [
     "static/css/main.014c1499.css",
-    "static/js/main.cbe4a5e2.js"
+    "static/js/main.616a53bf.js"
   ]
 }
