@@ -6,13 +6,19 @@ function Footer() {
     <footer className="footer">
       <h2>Contact Info</h2>
       <p>
-        <img className="icon" src="/images/email.svg" alt="Email icon"></img>
+        <img
+          className="icon"
+          src={process.env.PUBLIC_URL + "/images/email.svg"}
+          alt="Email icon"
+        ></img>
         dimmedd@hotmail.com
       </p>
       <p>
         <img
           className="icon"
-          src="/images/discord-color-seeklogo.com-2.svg"
+          src={
+            process.env.PUBLIC_URL + "/images/discord-color-seeklogo.com-2.svg"
+          }
           alt="Discord icon"
         ></img>
         svenkoBOEH#4008

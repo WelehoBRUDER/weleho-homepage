@@ -77,7 +77,7 @@ function Projects() {
                   className={`projectIcon ${
                     focusedImage === project.name ? "projectIconFocused" : ""
                   }`}
-                  src={"/images/" + project.image}
+                  src={process.env.PUBLIC_URL + "/images/" + project.image}
                   alt=""
                   onClick={() => focus(project.name)}
                 />
@@ -99,7 +99,10 @@ function Projects() {
                     rel="noreferrer"
                     className="github linkIcon"
                   >
-                    <img src="/images/open-in-new.svg" alt="Link to project" />
+                    <img
+                      src={process.env.PUBLIC_URL + "/images/open-in-new.svg"}
+                      alt="Link to project"
+                    />
                   </a>
                 </div>
                 <p className="projectDesc">{project.desc}</p>
