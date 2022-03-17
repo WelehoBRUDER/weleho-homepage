@@ -3,6 +3,7 @@ import "../style/main.scss";
 import "../style/projects.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ScreenImage from "../components/ScreenImage";
 
 function Projects() {
   const projectsArray = [
@@ -66,6 +67,11 @@ function Projects() {
   return (
     <div className="projects">
       <Header />
+      <ScreenImage
+        img={focusedImage}
+        show={focusedImage !== ""}
+        setFocusedImage={setFocusedImage}
+      />
       <div className="content">
         <h1 className="projectsTitle">My Projects</h1>
         <div className="projectGrid">
@@ -74,12 +80,10 @@ function Projects() {
               <div className={`projectContainer ${project.status.col}`}>
                 <h2 className="projectTitle">{project.name}</h2>
                 <img
-                  className={`projectIcon ${
-                    focusedImage === project.name ? "projectIconFocused" : ""
-                  }`}
+                  className="projectIcon"
                   src={process.env.PUBLIC_URL + "/images/" + project.image}
                   alt=""
-                  onClick={() => focus(project.name)}
+                  onClick={() => focus(project.image)}
                 />
                 <div className="githubButtons">
                   <a
