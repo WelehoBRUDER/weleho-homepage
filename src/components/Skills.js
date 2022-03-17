@@ -34,8 +34,13 @@ function Skills() {
     },
     {
       name: "React",
-      level: 35,
-      desc: "As with Typescript, I am still at the beginning.",
+      level: 40,
+      desc: "I consider myself a beginner React developer.",
+    },
+    {
+      name: "Python",
+      level: 15,
+      desc: "I've started learning Python, but so far I use it as if it was Javascript.",
     },
   ];
   return (

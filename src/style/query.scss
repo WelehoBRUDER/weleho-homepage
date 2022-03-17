@@ -1,0 +1,100 @@
+/* THIS FILE CONTAINS ALL MEDIA QUERIES RELATED TO MOBILE LAYOUT */
+@use "./main.scss" as *;
+
+@media only screen and (max-width: 700px) {
+  .main {
+    .content {
+      width: calc(100% - 60px);
+      left: 60px;
+
+      .intro,
+      .skills {
+        width: 100%;
+
+        h1,
+        h2,
+        .skillsTitle {
+          font-size: 39px;
+          white-space: pre-wrap;
+          word-break: break-all;
+        }
+        p,
+        a {
+          font-size: 19px;
+        }
+
+        .skill {
+          h2 {
+            font-size: 35px;
+          }
+
+          .skillBar {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background: $header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    p,
+    a,
+    .websiteTitle {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin: 10px;
+      text-decoration: none;
+    }
+  }
+
+  .footer {
+    p {
+      font-size: 11px;
+      img.icon {
+        width: 16px;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .projects {
+    width: calc(100% - 60px);
+    left: 60px;
+
+    .content {
+      .projectGrid {
+        .projectContainer {
+          width: 260px;
+          height: auto;
+
+          .projectIcon {
+            width: 240px;
+          }
+
+          .projectProgress {
+            width: 240px;
+            position: relative;
+          }
+
+          .githubButtons {
+            z-index: 5;
+            background: $header;
+          }
+        }
+      }
+    }
+  }
+}

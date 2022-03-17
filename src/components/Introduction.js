@@ -7,7 +7,16 @@ function Introduction() {
       <p>
         I am a Finnish programmer motivated by my passion for games. <br></br> I
         like making games with Javascript, and professionally I am a Frontend
-        developer.
+        developer.<br></br>I currently work at{" "}
+        <a
+          href="https://digitalentshelsinki.fi/"
+          target="_blank"
+          rel="noreferrer"
+          className="link-simple"
+        >
+          Digitalents Helsinki
+        </a>{" "}
+        as a software developer.
       </p>
       <h2>BACKGROUND</h2>
       <p>
