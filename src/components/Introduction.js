@@ -9,12 +9,12 @@ function Introduction() {
         like making games with Javascript, and professionally I am a Frontend
         developer.<br></br>I currently work at{" "}
         <a
-          href="https://digitalentshelsinki.fi/"
+          href="https://virittamohelsinki.fi/"
           target="_blank"
           rel="noreferrer"
           className="link-simple"
         >
-          Digitalents Helsinki
+          Virittämö Helsinki
         </a>{" "}
         as a software developer.
       </p>
